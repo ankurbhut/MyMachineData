@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_16sdp" />
+            <solid android:color="@color/colorPrimaryAlpha25" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/_2sdp"
+        android:end="@dimen/_2sdp"
+        android:start="@dimen/_2sdp"
+        android:top="@dimen/_2sdp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_15sdp" />
+            <solid android:color="#0D000000" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/_4sdp"
+        android:end="@dimen/_4sdp"
+        android:start="@dimen/_4sdp"
+        android:top="@dimen/_4sdp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_14sdp" />
+            <solid android:color="#0D000000" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/_6sdp"
+        android:end="@dimen/_6sdp"
+        android:start="@dimen/_6sdp"
+        android:top="@dimen/_6sdp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_13sdp" />
+            <solid android:color="#0D000000" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/_8sdp"
+        android:end="@dimen/_8sdp"
+        android:start="@dimen/_8sdp"
+        android:top="@dimen/_8sdp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_12sdp" />
+            <solid android:color="#0D000000" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/_10sdp"
+        android:end="@dimen/_10sdp"
+        android:start="@dimen/_10sdp"
+        android:top="@dimen/_10sdp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_11sdp" />
+            <gradient
+                android:angle="135"
+                android:centerColor="@color/colorPrimaryAlpha80"
+                android:endColor="@color/colorTextHint"
+                android:startColor="@color/colorPrimaryAlpha25"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/_11sdp"
+        android:end="@dimen/_11sdp"
+        android:start="@dimen/_11sdp"
+        android:top="@dimen/_11sdp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_10sdp" />
+            <gradient
+                android:angle="135"
+                android:endColor="@color/colorPrimary"
+                android:startColor="@color/colorPrimaryVariant"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>

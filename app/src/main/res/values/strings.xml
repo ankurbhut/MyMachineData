@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Ankur Practical</string>
+
+    <string name="asset_statements" translatable="false">
+    [{\"relation\": [\"delegate_permission/common.share_location\"],\"target\": {\"namespace\": \"android_app\",\"site\": \"https://app-earnings-link.com\"}},
+    {\"relation\": [\"delegate_permission/common.share_location\"],\"target\": {\"namespace\": \"android_app\",\"site\": \"https://dynamic-universal-link-567a0b6a1e8c.herokuapp.com\"}}]
+    </string>
+
+    <string name="demo_small" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="demo_medium" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="demo_large" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+
+    <string name="today">today</string>
+    <string name="yesterday">yesterday</string>
+    <string name="ok">Ok</string>
+
+
+
+    <string name="no_data_found">No data found</string>
+    <string name="error_server_error">Api not responding, please try after some times</string>
+    <string name="error_exception">Server not working</string>
+    <string name="app_exit_message">Press back again to exit the app</string>
+
+    <string name="required_permission">Required Permission</string>
+    <string name="you_can_not_use_some_features_without_overlay_permission_so_we_recommended_you_please_give_enable_overlay_permission">You can not use some features without overlay permission. So we recommend you please enable overlay permission.</string>
+    <string name="notification_permission_message">App uses notification to communicate to you for match alerts and general notification, Please grant access to notification</string>
+    <string name="app_needs_permission">App needs permission</string>
+    <string name="app_needs_permission_message">In order to continue playing game app needs permission to show earning view over other apps.</string>
+    <string name="grant">Grant</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="auto_ads_notification_title">Givvy is presenting overlay</string>
+    <string name="auto_ads_notification_message">You are enjoying with Givvy</string>
+
+    <string name="error">Error</string>
+    <string name="update_title">New app version</string>
+    <string name="update_force_update_message">Please update your app version to our latest version in order to continue.</string>
+    <string name="update">Update</string>
+    <string name="the_app_will_restart_multiple_times">The app will restart multiple times.</string>
+    <string name="currently_ads_are_not_available">Currently ads are not available</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="offer_wall">Offerwall</string>
+    <string name="referral">referral</string>
+    <string name="failed_to_parse_data">Failed to parse data</string>
+    <string name="failed_to_sync">Failed to sync</string>
+    <string name="failed_to_finish_game">Failed to finish game</string>
+    <string name="failed_to_start_game">Failed to start game</string>
+    <string name="undo">Undo</string>
+    <string name="finish_game">Finish Game</string>
+    <string name="your_code_has_been_copied_to_clipboard">Your code has been copied to clipboard</string>
+
+
+    <string name="invite_friend">Invite Friend</string>
+    <string name="seems_we_are_experiencing_some_technical_issues_at_the_moment_please_check_back_later">Seems we are experiencing some technical issues at the moment, please check back later.</string>
+    <string name="win_up_to">Win upto</string>
+    <string name="loading">loading game session...</string>
+    <string name="menu">Menu</string>
+    <string name="remove_player_s">Remove Player\'s</string>
+    <string name="do_you_really_want_to_remove_this_player">Do you really want to remove this player?</string>
+    <string name="username">Username</string>
+    <string name="country">Country</string>
+    <string name="language">Language\n</string>
+    <string name="let_s_set_up_your_account">Let\'s setup your account</string>
+    <string name="next">Next</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="please_select_your_country">Please select your country</string>
+    <string name="sending">Sending..</string>
+    <string name="choose_your_country">Choose your country</string>
+    <string name="type_to_search">type to search</string>
+    <string name="choose_your_language">Choose your language</string>
+    <string name="finish">Finish</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="welcome_text">Let us know your concerns by using the form above or by contacting us here</string>
+    <string name="sign_up_effortlessly_using_your_google_account">Sign up using your Google account</string>
+    <string name="log_in_with_google">Sign up with google</string>
+    <string name="by_clicking_the_continue_button_you_agree_with_our_terms_and_conditions_and_our_privacy_policy">By signing up, you agree to Givvy\'s Terms and conditions, and our Privacy policy.</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="failed_to_authenticate_user">Failed to authenticate user</string>
+    <string name="please_try_to_connect_with_your_gmail_account_and_try_again">Please try to connect with your gmail account and try again</string>
+
+    <string name="please_enter_your_message">Please enter your message</string>
+    <string name="feedback">Feedback</string>
+    <string name="or">Or</string>
+    <string name="let_us_know_your_experience_on_our_app">Let us know your experience on our app</string>
+    <string name="rate_us_title">Did you like our app?</string>
+    <string name="rate_us_message">We\'d love to hear from you! Let us know if you enjoyed the app and share your thoughts.</string>
+    <string name="google_play_rate_title">Rate us on Google Play!</string>
+    <string name="google_play_rate_message">Thanks for liking the app!\nYou can rate us at Google Play store</string>
+    <string name="feedback_title">Help us Improve!</string>
+    <string name="feedback_message">We\'d love to hear from you! Let us know if you enjoyed the app and share your thoughts.</string>
+    <string name="rate_us">Rate us</string>
+    <string name="thank_you_for_your_feedback">Thank You for your feedback!</string>
+    <string name="thank_you_for_your_feedback_message">We’re always trying to improve what we do and your feedback is invaluable! Keep your app up to date for the latest features and performance improvements.</string>
+    <string name="great">Great</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="back_to_app">Back to app</string>
+    <string name="submit">Submit</string>
+    <string name="please_enter_your_email">Please enter your email</string>
+    <string name="message">Message</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="swipe_up_to_unlock">Swipe up to unlock</string>
+    <string name="your_earning_are_increasing">Your earnings are increasing</string>
+    <string name="delete_account">Delete account</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="name">UserName\n</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="please_enter_your_username">Please enter your username</string>
+    <string name="write_your_feedback_here">Write your feedback here</string>
+    <string name="your_message_has_been_successfully_sent">Your message was sent successfully</string>
+    <string name="choose_preferred_languages">Choose your preferred language</string>
+    <string name="english_is_pre_selected">English is pre selected</string>
+    <string name="your_profile_was_updated_successfully">Your profile was updated successfully</string>
+
+
+    <string name="preview">Preview</string>
+    <string name="preview_instruction">Lock screen preview with the clock &amp; background of your choice</string>
+    <string name="clock">Clock</string>
+    <string name="clock_instruction">Select the clock type which will be displayed on your lock screen</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="wallpaper_instruction">Select a wallpaper from the list or choose your own from gallery</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_instruction">Allow notification access if you want to see notifications and their style</string>
+    <string name="lock_screen">Lock screen</string>
+    <string name="click_to_choose_from_gallery">Click to choose from gallery</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="save_n_start"><![CDATA[Save & start]]></string>
+    <string name="message_is_hidden_enter_the_app_to_check_the_details">Message is hidden, enter the app to check the details.</string>
+    <string name="failed_to_load">Failed to load</string>
+    <string name="retry">Retry</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2D3553</color>
+    <color name="colorPrimaryVariant">#1D2339</color>
+    <color name="windowBackground">#1D2339</color>
+    <color name="colorTertiary">#FFB059</color>
+    <color name="colorTertiaryVariant">#EFA24E</color>
+    <color name="colorTertiaryLight">#FBF0CB</color>
+    <color name="colorSecondary">#7A97FF</color>
+    <color name="colorSecondaryVariant">#6C8AF3</color>
+    <color name="colorSecondaryLight">#D1DBFF</color>
+    <color name="colorGold">#f7dd0a</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteAlpha15">#26FFFFFF</color>
+    <color name="whiteAlpha55">#BFFFFFFF</color>
+    <color name="whiteAlpha75">#BFFFFFFF</color>
+    <color name="whiteAlpha85">#D9FFFFFF</color>
+    <color name="blackAlpha85">#D9000000</color>
+    <color name="blackAlpha55">#8C000000</color>
+    <color name="blackAlpha35">#59000000</color>
+    <color name="blackAlpha15">#26000000</color>
+    <color name="blackAlpha5">#0D000000</color>
+    <color name="colorTextShadow">#40000000</color>
+
+    <color name="colorTextHint">#656F8F</color>
+    <color name="colorTextPrimary">#BBC3E3</color>
+    <color name="colorTextPrimaryVariant">#D5DCF6</color>
+    <color name="colorTextSecondary">#9299B5</color>
+    <color name="colorTextSecondaryInverse">#BAC2DF</color>
+
+    <color name="colorPrimaryAlpha80">#CE1D2339</color>
+    <color name="colorPrimaryAlpha25">#3F1D2339</color>
+    <color name="colorTertiaryAlpha80">#CEFBF0CB</color>
+    <color name="colorTertiaryAlpha25">#26FBF0CB</color>
+
+    <color name="colorShimmerAlt">#D7E7EBFF</color>
+    <color name="shimmerWidget">#98575C7A</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSurface">#eef1ff</color>
+</resources>

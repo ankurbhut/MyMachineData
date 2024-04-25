@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="appTitle"
+            type="String" />
+
+        <variable
+            name="subTitle"
+            type="String" />
+
+        <variable
+            name="showBack"
+            type="Boolean" />
+
+        <variable
+            name="showProfile"
+            type="Boolean" />
+
+        <variable
+            name="showSetting"
+            type="Boolean" />
+
+        <variable
+            name="showNotification"
+            type="Boolean" />
+
+        <variable
+            name="showSwitch"
+            type="Boolean" />
+    </data>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_collapseMode="pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:animateLayoutChanges="true"
+            android:paddingHorizontal="@dimen/_12sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_default_profile"
+                android:onClick="@{clickListener::onClick}"
+                android:scaleType="centerCrop"
+                app:contentPadding="@dimen/_1ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="0dp"
+                app:shapeAppearance="@style/RoundedCorner8"
+                app:strokeColor="@android:color/transparent"
+                app:strokeWidth="0dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvName"
+                style="@style/FontMontserratRegular.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:textColor="@color/colorTextPrimary"
+                android:onClick="@{clickListener::onClick}"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toEndOf="@id/userImage"
+                app:layout_constraintTop_toTopOf="@+id/userImage"
+                tools:text="username" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAmount"
+                style="@style/FontMontserratBold.Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{clickListener::onClick}"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/colorTertiary"
+                app:layout_constraintStart_toStartOf="@+id/tvName"
+                app:layout_constraintTop_toBottomOf="@+id/tvName"
+                tools:text="$00.00" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTotal"
+                style="@style/FontMontserratMedium.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:onClick="@{clickListener::onClick}"
+                android:setDecimalScale="@{`#.####`}"
+                android:textSize="@dimen/_7ssp"
+                android:textColor="@color/colorTextSecondary"
+                app:layout_constraintBottom_toBottomOf="@+id/tvAmount"
+                app:layout_constraintStart_toEndOf="@+id/tvAmount"
+                app:layout_constraintTop_toBottomOf="@+id/tvName"
+                tools:text="00,0000" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupUserDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isVisible="@{showProfile}"
+                android:visibility="gone"
+                app:constraint_referenced_ids="userImage,tvTotal,tvAmount,tvName"
+                tools:visibility="visible" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtTitle"
+                style="@style/FontMontserratBold.Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:setValue="@{appTitle}"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSubTitle"
+                style="@style/FontOpenSansRegular.Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_minus1sdp"
+                android:setValue="@{subTitle}"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTertiary"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSettings"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:adjustViewBounds="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:isVisible="@{showSetting}"
+                android:onClick="@{(v)->clickListener.onClick(v)}"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnNotification"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginEnd="0dp"
+                app:srcCompat="@drawable/ic_settings" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnNotification"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:isVisible="@{showNotification}"
+                android:src="@drawable/ic_notification"
+                android:onClick="@{(v)->clickListener.onClick(v)}"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginEnd="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</layout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <xyz.peridy.shimmerlayout.ShimmerLayout
+        android:id="@+id/layoutLoadingDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:shimmer_color="@color/colorShimmerAlt"
+        app:shimmer_duration="750">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_7sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/background_rectangle"
+                android:padding="@dimen/_7sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:id="@+id/txtTitle"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    android:height="@dimen/_12sdp"
+                    android:background="@color/shimmerWidget"
+                    app:layout_constraintBottom_toTopOf="@+id/txtDesc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <View
+                    android:id="@+id/txtDesc"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_minus40sdp"
+                    android:background="@color/shimmerWidget"
+                    app:layout_constraintStart_toStartOf="@+id/txtTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+                <View
+                    android:id="@+id/txtDesc1"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_minus40sdp"
+                    android:background="@color/shimmerWidget"
+                    app:layout_constraintStart_toStartOf="@+id/txtDesc"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDesc" />
+
+                <View
+                    android:id="@+id/txtDesc2"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_minus40sdp"
+                    android:background="@color/shimmerWidget"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txtDesc1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDesc1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </xyz.peridy.shimmerlayout.ShimmerLayout>
+</layout>

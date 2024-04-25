@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_menu_nav_graph"
+    app:startDestination="@id/navHome">
+
+    <action
+        android:id="@+id/action_from_this_to_withdrawFragment"
+        app:destination="@id/withdrawFragment"
+        app:enterAnim="@anim/activity_fade_in"
+        app:exitAnim="@anim/activity_fade_out"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/activity_fade_in"
+        app:popExitAnim="@anim/activity_fade_out"
+        app:popUpToInclusive="false"
+        app:popUpToSaveState="true"
+        app:restoreState="true" >
+        <argument
+            android:name="showBottomBar"
+            android:defaultValue="false" />
+        <argument
+            android:name="showProfileSection"
+            android:defaultValue="false" />
+    </action>
+
+    <fragment
+        android:id="@+id/navProfile"
+        android:name="com.givvy.mydatamachine.ui.profile.AccountFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_from_this_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/activity_fade_in"
+            app:exitAnim="@anim/activity_fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/activity_fade_in"
+            app:popExitAnim="@anim/activity_fade_out"
+            app:popUpToInclusive="false"
+            app:popUpToSaveState="true"
+            app:restoreState="true" >
+            <argument
+                android:name="showBottomBar"
+                android:defaultValue="false" />
+            <argument
+                android:name="showProfileSection"
+                android:defaultValue="false" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navReferral"
+        android:name="com.givvy.mydatamachine.ui.referral.ReferralFragment"
+        android:label="@string/referral"
+        tools:layout="@layout/fragment_referral" />
+
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.givvy.mydatamachine.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navOfferwall"
+        android:name="com.givvy.mydatamachine.ui.offers.OffersFragment"
+        android:label="@string/offer_wall"
+        tools:layout="@layout/fragment_offers" />
+
+    <fragment
+        android:id="@+id/withdrawFragment"
+        android:name="com.givvy.mydatamachine.ui.withdraw.WithdrawFragment"
+        android:label="@string/withdraw"
+        tools:layout="@layout/fragment_withdraw_page" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.givvy.mydatamachine.ui.settings.SettingFragment"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_contactUsFragment"
+            app:destination="@id/contactUsFragment"
+            app:launchSingleTop="true" />
+
+        <action
+            android:id="@+id/action_editProfile"
+            app:destination="@id/editProfileFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/contactUsFragment"
+        android:name="com.givvy.mydatamachine.ui.settings.BottomSheetContactUsFragment"
+        android:label="@string/contact_us"
+        tools:layout="@layout/bottom_sheet_contact_us" />
+
+    <dialog
+        android:id="@+id/editProfileFragment"
+        android:name="com.givvy.mydatamachine.ui.settings.BottomSheetEditProfile"
+        android:label="@string/edit_profile"
+        tools:layout="@layout/bottom_sheet_editprofile" />
+
+
+
+</navigation>
