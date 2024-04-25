@@ -39,7 +39,7 @@
             android:orientation="vertical"
             android:layout_margin="@dimen/_8sdp"
             android:paddingHorizontal="@dimen/_13sdp"
-            android:visibility="invisible"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
