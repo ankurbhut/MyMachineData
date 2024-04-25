@@ -1,5 +1,6 @@
 package com.practical.mydatamachine.ui.post
 
+import androidx.annotation.MainThread
 import androidx.lifecycle.lifecycleScope
 import com.practical.mydatamachine.R
 import com.practical.mydatamachine.databinding.ActivityPostDetailBinding
@@ -14,6 +15,7 @@ import com.practical.mydatamachine.ui.post.state.PostState
 import com.practical.mydatamachine.ui.post.viewmodel.PostViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+
 
 class PostDetailActivity :
     NavigationBaseActivity<ActivityPostDetailBinding, PostEvent, PostState, PostViewModel>(
@@ -93,6 +95,11 @@ class PostDetailActivity :
             binding?.mainView?.show()
             binding?.loader?.hide()
         }
+    }
+
+    @MainThread
+    override fun onSuperBackPressed() {
+        finish()
     }
 
     companion object {

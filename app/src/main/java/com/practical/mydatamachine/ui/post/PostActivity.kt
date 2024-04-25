@@ -1,6 +1,7 @@
 package com.practical.mydatamachine.ui.post
 
 import android.view.View
+import androidx.annotation.MainThread
 import androidx.lifecycle.lifecycleScope
 import androidx.paging.LoadState
 import androidx.paging.PagingData
@@ -135,6 +136,11 @@ class PostActivity :
             val post = objects[0] as Posts
             post.id?.let { openPostDetailActivity(it) }
         }
+    }
+
+    @MainThread
+    override fun onSuperBackPressed() {
+        appExitAlert()
     }
 
     companion object {
